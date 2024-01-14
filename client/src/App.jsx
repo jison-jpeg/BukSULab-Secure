@@ -1,9 +1,16 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Signin from "./pages/Signin"
+import Dashboard from "./pages/Dashboard"
 
 export default function App() {
   return (
     <>
-    <h1 className='text-red-500'>Hello</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Signin />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
