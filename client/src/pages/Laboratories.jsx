@@ -1,11 +1,10 @@
 import React from 'react'
 import Header from '../components/layouts/Header'
-import UserStats from '../components/cards/User'
-import SystemLogs from '../components/systemLogs/RecentActivity'
-import UserTable from '../components/tables/UserTable'
+import SystemLogs from '../components/SystemLogs/RecentActivity'
 import LabCards from '../components/cards/Lab'
+import LabGrid from '../components/Laboratories/LabGrid'
 
-export default function Dashboard() {
+export default function Laboratories() {
     return (
         <>
             <Header />
@@ -25,20 +24,19 @@ export default function Dashboard() {
                 </div>
                 {/* End Page Title */}
 
-                <div className='greetings'>
-                    <h1>Hello, <span>Jayson!</span> </h1>
-                </div>
-                
-
                 {/* ======= Main Content ======= */}
                 <section className="section dashboard">
                     <div className="row">
 
                         {/* Left side columns */}
                         <div className="col-lg-8">
-                            <UserStats />
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Computer Lab Management</h5>
+                                    <LabGrid />
+                                </div>
+                            </div>
                             <LabCards />
-                            <UserTable />
                         </div>
                         {/* End Left side columns */}
 
@@ -56,6 +54,5 @@ export default function Dashboard() {
             </main>
             {/* End #main */}
         </>
-
     )
 }

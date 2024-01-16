@@ -6,6 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -239,13 +240,23 @@ h6 {
   color: #012970;
   font-family: "Poppins", sans-serif;
 }
-
 .card-title span {
   color: #899bbd;
   font-size: 14px;
   font-weight: 400;
 }
-
+.card-badge {
+  padding: 20px 0 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #012970;
+  font-family: "Poppins", sans-serif;
+}
+.card-badge span {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
 .card-body {
   padding: 0 20px 20px 20px;
 }
@@ -360,17 +371,18 @@ h6 {
 
 @media (min-width: 1200px) {
   .logo {
-    width: 280px;
+    width: 305px;
   }
 }
 
 .logo img {
-  max-height: 26px;
-  margin-right: 6px;
+  max-height: 40px;
+  margin-right: 15px;
+  margin-left: 10px;
 }
 
 .logo span {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   color: #012970;
   font-family: "Nunito", sans-serif;
@@ -378,7 +390,7 @@ h6 {
 
 .header {
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 2;
   height: 60px;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
   background-color: #fff;
@@ -389,7 +401,8 @@ h6 {
 
 .header .toggle-sidebar-btn {
   font-size: 32px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
+  /* margin-left: 28vh; */
   cursor: pointer;
   color: #012970;
 }
@@ -599,18 +612,39 @@ h6 {
 --------------------------------------------------------------*/
 .sidebar {
   position: fixed;
-  top: 60px;
+  top: 0;
   left: 0;
   bottom: 0;
   width: 300px;
   z-index: 996;
   transition: all 0.3s;
-  padding: 20px;
+  padding: 10px 20px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
   background-color: #fff;
+}
+
+.sidebar .toggle-sidebar-btn {
+  font-size: 26px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #012970;
+  position: absolute;
+  right: 0;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-logo {
+  max-width: 60%;
+  height: auto;
+  margin: 3vh auto;
 }
 
 @media (max-width: 1199px) {
@@ -760,6 +794,34 @@ h6 {
 /*--------------------------------------------------------------
 # Dashboard
 --------------------------------------------------------------*/
+
+/* Greetings */
+.greetings h1 {
+  font-size: 54px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #ff594d;
+  font-family: "Poppins", sans-serif;
+}
+
+.greetings h1 span {
+  font-weight: 100;
+  color: #012970;
+}
+
+/* LabGrid.css */
+.card-link .lab-card {
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background-color and transform properties */
+}
+
+.card-link:hover .lab-card {
+  background-color: #716ad11f; /* Change the background color on hover */
+  transform: translateY(-5px); /* Apply a translateY transformation for the floating effect */
+}
+
+
+
 /* Filter dropdown */
 .dashboard .filter {
   position: absolute;
@@ -810,6 +872,20 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+/* Lab Cards */
+.dashboard .lab-card {
+  padding-bottom: 10px;
+}
+
+.dashboard .lab-card h6 {
+  font-size: 28px;
+  color: #012970;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
 
 .dashboard .card-icon {
   font-size: 32px;

@@ -1,0 +1,31 @@
+- client
+  - .eslintrc.cjs
+  - .gitignore
+  - index.html
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - public
+  
+  - src
+    - App.jsx
+    - components
+      - Cards
+        - Lab.jsx
+        - User.jsx
+      - Header.jsx
+      - Laboratories
+        - LabGrid.jsx
+      - Rooms.jsx
+      - SystemLogs
+        - RecentActivity.jsx
+      - Tables
+        - UserTable.jsx
+    - index.css
+    - main.jsx
+    - pages
+      - Dashboard.jsx
+      - Laboratories.jsx
+      - Signin.jsx
+  - tailwind.config.js
+  - vite.config.js
