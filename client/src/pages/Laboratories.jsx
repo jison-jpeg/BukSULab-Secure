@@ -1,8 +1,9 @@
 import React from 'react'
 import Header from '../components/layouts/Header'
-import SystemLogs from '../components/SystemLogs/RecentActivity'
+import SystemLogs from '../components/systemLogs/RecentActivity'
 import LabCards from '../components/cards/Lab'
 import LabGrid from '../components/Laboratories/LabGrid'
+import AddLaboratory from '../components/laboratories/modals/AddLaboratory'
 
 export default function Laboratories() {
     return (
@@ -23,6 +24,24 @@ export default function Laboratories() {
                     </nav>
                 </div>
                 {/* End Page Title */}
+
+                <div className="mt-3 mb-3">
+                   
+                        {/* Vertically centered Modal */}
+                        <button
+                            type="button"
+                            className="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#addModal"
+                        >
+                            Add Laboratory
+                        </button>
+                        <AddLaboratory />
+                        {/* End Vertically centered Modal*/}
+                   
+
+                </div>
+
 
                 {/* ======= Main Content ======= */}
                 <section className="section dashboard">

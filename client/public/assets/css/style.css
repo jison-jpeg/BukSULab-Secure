@@ -810,14 +810,19 @@ h6 {
   color: #012970;
 }
 
-/* LabGrid.css */
+/* LabGrid */
 .card-link .lab-card {
+  cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for background-color and transform properties */
 }
 
 .card-link:hover .lab-card {
   background-color: #716ad11f; /* Change the background color on hover */
   transform: translateY(-5px); /* Apply a translateY transformation for the floating effect */
+}
+.card-link a {
+  text-decoration: none;
+  color: #012970;
 }
 
 
