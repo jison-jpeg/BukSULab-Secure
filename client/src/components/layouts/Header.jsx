@@ -303,28 +303,28 @@ export default function Header() {
                     {/* End Room Mangement Nav */}
                     {/* End Dashboard Nav */}
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="index.html">
+                        <a className="nav-link collapsed" href="/attendance">
                             <i className="bi bi-clipboard2-check" />
                             <span>Attendance Mangement</span>
                         </a>
                     </li>
                     {/* End Attendance Mangement Nav */}
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="index.html">
+                        <a className="nav-link collapsed" href="/instructors">
                             <i className="bi bi-person-workspace" />
                             <span>Instructors Mangement</span>
                         </a>
                     </li>
                     {/* End Instructors Mangement Nav */}
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="index.html">
+                        <a className="nav-link collapsed" href="/schedule">
                             <i className="bi bi-calendar2-week" />
                             <span>Class Schedule</span>
                         </a>
                     </li>
                     {/* End Class Schedule Nav */}
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="index.html">
+                        <a className="nav-link collapsed" href="/reports">
                             <i className="bi bi-graph-up-arrow" />
                             <span>Reports</span>
                         </a>
@@ -332,14 +332,14 @@ export default function Header() {
                     {/* End Reports Nav */}
                     <li className="nav-heading">USER</li>
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="users-profile.html">
+                        <a className="nav-link collapsed" href="/profile">
                             <i className="bi bi-person" />
                             <span>Profile</span>
                         </a>
                     </li>
                     {/* End Profile Page Nav */}
                     <li className="nav-item">
-                        <a className="nav-link collapsed" href="pages-contact.html">
+                        <a className="nav-link collapsed" href="/contact">
                             <i className="bi bi-envelope" />
                             <span>Contact</span>
                         </a>
@@ -363,13 +363,13 @@ export default function Header() {
                             data-bs-parent="#sidebar-nav"
                         >
                             <li>
-                                <a href="charts-apexcharts.html">
+                                <a href="/users">
                                     <i className="bi bi-circle" />
                                     <span>User Management</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="charts-chartjs.html">
+                                <a href="/logs">
                                     <i className="bi bi-circle" />
                                     <span>Audit Logs</span>
                                 </a>

@@ -10,7 +10,7 @@ export default function UserTable() {
                         <a href='#' className="card-link">View All</a>
                     </div>
                     {/* Table with hoverable rows */}
-                    <table className="table table-hover">
+                    <table className="table datatable">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>

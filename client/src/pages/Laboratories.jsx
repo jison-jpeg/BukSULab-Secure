@@ -16,10 +16,9 @@ export default function Laboratories() {
                     <nav>
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="index.html">Home</a>
+                                <a href="/">Home</a>
                             </li>
-                            <li className="breadcrumb-item">Pages</li>
-                            <li className="breadcrumb-item active">Blank</li>
+                            <li className="breadcrumb-item active">Room Management</li>
                         </ol>
                     </nav>
                 </div>
